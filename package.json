@@ -1,0 +1,51 @@
+{
+  "name": "get-last-deployment",
+  "version": "1.0.0",
+  "description": "Get the last deployment in an environment",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "pack": "ncc build",
+    "test": "jest --passWithNoTests",
+    "all": "npm run build && npm run format && npm run lint && npm run pack && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpleactions/get-last-deployment.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Deployment"
+  ],
+  "author": "GitHub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simpleactions/get-last-deployment/issues"
+  },
+  "homepage": "https://github.com/simpleactions/get-last-deployment#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.2.0",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^12.12.38",
+    "@typescript-eslint/parser": "^2.8.0",
+    "@zeit/ncc": "^0.22.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-github": "^3.0.0",
+    "eslint-plugin-jest": "^23.10.0",
+    "flow-bin": "^0.124.0",
+    "graphql": "14.0.0",
+    "jest": "^25.5.4",
+    "jest-circus": "^26.0.1",
+    "js-yaml": "^3.13.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^25.5.1",
+    "typescript": "^3.6.4"
+  }
+}

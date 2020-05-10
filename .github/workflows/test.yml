@@ -1,0 +1,21 @@
+name: "units-test"
+on:
+  pull_request:
+    branches: master
+
+jobs:
+  # test action works running from the graph
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Create a deployment
+        uses: ./
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          description: a test environment
+          environment: preview
+          ref: ${{ github.head_ref }}
+          transient_environment: true
+

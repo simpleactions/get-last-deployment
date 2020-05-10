@@ -1,0 +1,20 @@
+name: 'Get the Last Deployment'
+description: 'Get the Last Deployment in an Environment'
+author: 'Sergio Garcia'
+branding:
+  icon: 'package'
+  color: 'blue'
+inputs:
+  github_token:
+    description: 'The GitHub token (if not provided the environment variable GITHUB_TOKEN will be used instead)'
+    required: false
+  environment:
+    description: 'The environment name'
+    required: true
+outputs:
+  deployment_id:
+    description: 'The deployment id'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
