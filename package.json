@@ -29,7 +29,7 @@
   "homepage": "https://github.com/simpleactions/get-last-deployment#readme",
   "dependencies": {},
   "devDependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^2.2.0",
     "@types/jest": "^25.2.1",
     "@types/node": "^12.12.38",
