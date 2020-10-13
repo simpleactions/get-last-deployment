@@ -18,7 +18,7 @@ async function run(): Promise<void> {
 
     const deployments = request.data
 
-    if (deployments.length >= 0) {
+    if (deployments.length > 0) {
       core.setOutput('deployment_id', deployments[0].id.toString())
     }
   } catch (error) {
